@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Product Management System</title>
+  </head>
+  <body>
+    <h1 id="main-heading">Product management system</h1>
+    <form action>
+      <input
+        type="text"
+        id="title"
+        placeholder="title"
+        autocomplete="new-password"
+        required
+      />
+      <div class="price-field">
+        <input
+          type="number"
+          id="price"
+          placeholder="price"
+          required
+          class="price"
+        />
+        <input
+          type="number"
+          id="taxes"
+          placeholder="taxes"
+          required
+          class="price"
+        />
+        <input
+          type="number"
+          id="adds"
+          placeholder="adds"
+          required
+          class="price"
+        />
+        <input
+          type="number"
+          id="discount"
+          placeholder="discount"
+          required
+          class="price"
+        />
+        <p class="total">total: <span id="total"></span></p>
+      </div>
+      <input type="number" id="count" placeholder="count" />
+      <input type="text" id="category" placeholder="category" required />
+      <input type="submit" value="Create" id="create-btn" />
+    </form>
+    <div class="btns">
+      <button id="delete-all">
+        delete all (<span id="products-num"></span>)
+      </button>
+    </div>
+
+    <ul id="table">
+      <li id="table-head">
+        <span>ID</span>
+        <span>title</span>
+        <span>price</span>
+        <span>taxes</span>
+        <span>adds</span>
+        <span>discount</span>
+        <span>total</span>
+        <span>category</span>
+        <span>update</span>
+        <span>delete</span>
+      </li>
+      <div id="table-body"></div>
+    </ul>
+    <script src="script.js"></script>
+  </body>
+</html>
